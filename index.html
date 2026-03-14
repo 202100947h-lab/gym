@@ -1,84 +1,361 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huber Gym</title>
-    
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="preconnect" href="https://www.tiktok.com" />
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- JS -->
     <script src="js/main.js" defer></script>
 </head>
-
 <body>
 
     <header>
         <nav id="navbar">
-            <a href="#" class="logo">Huber <span>Gym</span></a>
+            <a href="#home" class="logo">Huber <span>Gym</span></a>
+
             <ul class="nav-links">
                 <li><a href="#historia">Historia</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#programas">Programas</a></li>
                 <li><a href="#galeria">Galería</a></li>
-                <li><a href="#social">Social</a></li>
+                <li><a href="#social">Movimiento</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
             </ul>
+
             <a href="#contacto" class="btn">Únete Ahora</a>
         </nav>
     </header>
 
-
     <main>
+        <!-- HERO -->
         <section id="home" class="hero">
             <div class="hero-content fade-in">
-                <h1>Primero tu <span>Límites</span></h1>
-                <p>Centro de entramiento y salud preventiva.</p>
-                <a href="#programas" class="btn">Explorar Programas</a>
+                <p class="eyebrow">Centro de entrenamiento y salud preventiva</p>
+                <h1>Primero tus <span>Límites</span></h1>
+                <p>
+                    Entrenamiento, prevención y transformación física con enfoque profesional.
+                </p>
+                <div class="hero-actions">
+                    <a href="#programas" class="btn">Explorar Programas</a>
+                    <a href="#nosotros" class="btn btn-outline">Conócenos</a>
+                </div>
             </div>
         </section>
 
+        <!-- HISTORIA -->
         <section id="historia" class="historia">
             <div class="historia-container fade-in">
                 <div class="historia-img">
-                    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop" alt="Nuestra Historia">
+                    <img
+                        src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1200&auto=format&fit=crop"
+                        alt="Nuestra historia en Huber Gym"
+                    />
                 </div>
+
                 <div class="historia-texto">
-                    <h2>Nuestra <span>Historia</span></h2>
+                    <p class="section-tag">Nuestra historia</p>
+                    <h2>Donde la pasión se convierte en <span>transformación</span></h2>
                     <p>
-                        Donde la pasión se convierte en transformación.<br><br>
-                        Todo comenzó en Cusco, en el año 2001. Un sueño, una visión, y un propósito claro: transformar vidas a través del movimiento.
-                        Al frente de esta misión está el Coach Hugo Bernaola, un referente del entrenamiento físico con más de 30 años de experiencia.<br><br>
-                        Su pasión lo llevó a crear 9 programas...</p>
+                        Todo comenzó en Cusco, en el año 2001. Un sueño, una visión y un propósito claro:
+                        transformar vidas a través del movimiento.
+                    </p>
+                    <p>
+                        Al frente de esta misión está el Coach Hugo Bernaola, referente del entrenamiento
+                        físico con más de 30 años de experiencia, desarrollando programas especializados
+                        para distintas necesidades y perfiles.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="programas" class="programas">
-            <h2 class="fade-in">Nuestros <span>Programas</span></h2>
-            <div class="grid-programas">
-                <div class="card-pro fade-in"><h3>Al aire libre</h3></div>
-                <div class="card-pro fade-in"><h3>Trainer Contigo Virtual</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Personalizado</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Power</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Corp</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Altrem</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Medical</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Men</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Fit</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Max</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Woman</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Correctivo</h3></div>
-                <div class="card-pro fade-in"><h3>Huber 360</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Kids</h3></div>
-                <div class="card-pro fade-in"><h3>Huber Special</h3></div>
-                <div class="card-pro fade-in"><h3>Terapia Bemer</h3></div>
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="nosotros">
+            <div class="section-head fade-in">
+                <p class="section-tag">Nosotros</p>
+                <h2>Más que un gimnasio, una experiencia de <span>evolución</span></h2>
+                <p>
+                    Combinamos entrenamiento, disciplina, acompañamiento profesional y enfoque preventivo
+                    para ayudarte a lograr resultados sostenibles.
+                </p>
+            </div>
+
+            <div class="nosotros-grid">
+                <article class="nosotros-card fade-in">
+                    <div class="nosotros-icon">01</div>
+                    <h3>Misión</h3>
+                    <p>
+                        Impulsar el bienestar físico y mental de cada persona mediante programas
+                        personalizados, seguimiento profesional y cultura de constancia.
+                    </p>
+                </article>
+
+                <article class="nosotros-card fade-in">
+                    <div class="nosotros-icon">02</div>
+                    <h3>Visión</h3>
+                    <p>
+                        Ser un referente en entrenamiento integral y salud preventiva en Cusco, destacando
+                        por innovación, resultados y cercanía con nuestros alumnos.
+                    </p>
+                </article>
+
+                <article class="nosotros-card fade-in">
+                    <div class="nosotros-icon">03</div>
+                    <h3>Valores</h3>
+                    <p>
+                        Disciplina, compromiso, superación, profesionalismo y atención humana en cada etapa
+                        del proceso de transformación.
+                    </p>
+                </article>
             </div>
         </section>
 
+        <!-- PROGRAMAS -->
+        <section id="programas" class="programas">
+            <div class="section-head fade-in">
+                <p class="section-tag">Nuestros programas</p>
+                <h2>Soluciones diseñadas para cada <span>objetivo</span></h2>
+                <p>
+                    Pasa el cursor por cada card para ver una vista rápida. Cada programa está listo para
+                    abrir su propia página independiente.
+                </p>
+            </div>
+
+            <!-- FILA 1 / 5 CARDS -->
+            <div class="program-row auto-loop fade-in" data-speed="0.35">
+                <div class="program-track">
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/al-aire-libre.html">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=900&auto=format&fit=crop" alt="Programa Al aire libre" />
+                        <div class="program-content">
+                            <h3>Al aire libre</h3>
+                            <p>Entrenamiento funcional en espacios abiertos.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Sesiones dinámicas en exteriores para mejorar resistencia, energía y motivación.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/trainer-contigo-virtual.html">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=900&auto=format&fit=crop" alt="Trainer Contigo Virtual" />
+                        <div class="program-content">
+                            <h3>Trainer Contigo Virtual</h3>
+                            <p>Acompañamiento remoto desde cualquier lugar.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Rutinas online, seguimiento y control para entrenar con guía profesional a distancia.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-personalizado.html">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=900&auto=format&fit=crop" alt="Huber Personalizado" />
+                        <div class="program-content">
+                            <h3>Huber Personalizado</h3>
+                            <p>Plan diseñado según tu condición y meta.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Evaluación, personalización y control continuo para maximizar resultados.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-power.html">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=900&auto=format&fit=crop" alt="Huber Power" />
+                        <div class="program-content">
+                            <h3>Huber Power</h3>
+                            <p>Fuerza, intensidad y rendimiento.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Programa orientado al desarrollo de potencia muscular y alto desempeño.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-corp.html">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=900&auto=format&fit=crop" alt="Huber Corp" />
+                        <div class="program-content">
+                            <h3>Huber Corp</h3>
+                            <p>Bienestar corporativo para equipos.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Entrenamiento y activación física para empresas que apuestan por su gente.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- FILA 2 / 5 CARDS -->
+            <div class="program-row auto-loop fade-in" data-speed="0.28">
+                <div class="program-track">
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-altrem.html">
+                        <img src="https://images.unsplash.com/photo-1596357395217-80de13130e92?q=80&w=900&auto=format&fit=crop" alt="Huber Altrem" />
+                        <div class="program-content">
+                            <h3>Huber Altrem</h3>
+                            <p>Trabajo de alto compromiso físico.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Reto progresivo para quienes buscan elevar resistencia, fortaleza y carácter.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-medical.html">
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=900&auto=format&fit=crop" alt="Huber Medical" />
+                        <div class="program-content">
+                            <h3>Huber Medical</h3>
+                            <p>Movimiento con enfoque preventivo.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Programa orientado a salud, recuperación funcional y bienestar integral.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-men.html">
+                        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=900&auto=format&fit=crop" alt="Huber Men" />
+                        <div class="program-content">
+                            <h3>Huber Men</h3>
+                            <p>Condición física para el público masculino.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Entrenamiento enfocado en fuerza, definición y mejora del rendimiento general.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-fit.html">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=900&auto=format&fit=crop" alt="Huber Fit" />
+                        <div class="program-content">
+                            <h3>Huber Fit</h3>
+                            <p>Equilibrio entre fuerza, estética y salud.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Una propuesta versátil para mejorar composición corporal y bienestar diario.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-max.html">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=900&auto=format&fit=crop" alt="Huber Max" />
+                        <div class="program-content">
+                            <h3>Huber Max</h3>
+                            <p>Máximo nivel de exigencia y progreso.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Plan intenso para usuarios que buscan ir al siguiente nivel con estructura y disciplina.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- FILA 3 / 6 CARDS -->
+            <div class="program-row auto-loop fade-in" data-speed="0.22">
+                <div class="program-track">
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-woman.html">
+                        <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?q=80&w=900&auto=format&fit=crop" alt="Huber Woman" />
+                        <div class="program-content">
+                            <h3>Huber Woman</h3>
+                            <p>Entrenamiento especializado para mujeres.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Programa adaptado a objetivos de tonificación, fuerza y salud femenina.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-correctivo.html">
+                        <img src="https://images.unsplash.com/photo-1517837016564-bfc1654f1f22?q=80&w=900&auto=format&fit=crop" alt="Huber Correctivo" />
+                        <div class="program-content">
+                            <h3>Huber Correctivo</h3>
+                            <p>Corrección postural y movilidad.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Ideal para mejorar patrones de movimiento, estabilidad y postura funcional.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-360.html">
+                        <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?q=80&w=900&auto=format&fit=crop" alt="Huber 360" />
+                        <div class="program-content">
+                            <h3>Huber 360</h3>
+                            <p>Enfoque integral y completo.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Un sistema global que combina fuerza, cardio, movilidad y seguimiento profesional.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-kids.html">
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=900&auto=format&fit=crop" alt="Huber Kids" />
+                        <div class="program-content">
+                            <h3>Huber Kids</h3>
+                            <p>Actividad física para niños.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Movimiento, coordinación y disciplina adaptados a edades tempranas.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/huber-special.html">
+                        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=900&auto=format&fit=crop" alt="Huber Special" />
+                        <div class="program-content">
+                            <h3>Huber Special</h3>
+                            <p>Atención especializada según necesidad.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Diseñado para perfiles que requieren mayor personalización y acompañamiento.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+
+                    <article class="program-card" tabindex="0" role="link" data-link="programas/terapia-bemer.html">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=900&auto=format&fit=crop" alt="Terapia Bemer" />
+                        <div class="program-content">
+                            <h3>Terapia Bemer</h3>
+                            <p>Recuperación y bienestar complementario.</p>
+                        </div>
+                        <div class="program-overlay">
+                            <p>Alternativa orientada a favorecer recuperación, circulación y descanso físico.</p>
+                            <span class="card-cta">Ver programa</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="program-actions fade-in">
+                <button id="openProgramsModal" class="btn">Ver más programas</button>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
         <section id="galeria" class="galeria">
-            <h2 class="fade-in">Nuestras <span>Instalaciones</span></h2>
+            <div class="section-head fade-in">
+                <p class="section-tag">Galería</p>
+                <h2>Nuestras <span>instalaciones</span></h2>
+            </div>
+
             <div class="masonry fade-in">
                 <div class="item img-1"></div>
                 <div class="item img-2"></div>
@@ -89,25 +366,145 @@
             </div>
         </section>
 
-        <section id="social" class="tiktok-section">
-            <div class="tiktok-header fade-in">
-                <h2>En <span>Movimiento</span></h2>
-                <p>Síguenos en TikTok <a href="https://www.tiktok.com/@hubergymcusco?_r=1&_t=ZS-94YP43hGULZ" target="_blank" rel="noopener noreferrer" style="color: inherit;">@hubergymcusco</a></p>
+        <!-- MOVIMIENTO / TIKTOK -->
+        <section id="social" class="social-section">
+            <div class="section-head fade-in">
+                <p class="section-tag">En movimiento</p>
+                <h2>Contenido en <span>TikTok</span></h2>
+                <p>
+                    Cambia los links de cada card directamente en el HTML. El carrusel rota solo y se detiene al pasar el cursor.
+                </p>
             </div>
-            <div class="tiktok-carousel fade-in">
-                <div class="tiktok-card"><a href="https://vt.tiktok.com/ZSuMk5tGT/" target="_blank" class="tiktok-link"></a><div class="play-btn">▶</div></div>
-                <div class="tiktok-card"><a href="https://www.tiktok.com/@tu_cuenta/video/0987654321" target="_blank" class="tiktok-link"></a><div class="play-btn">▶</div></div>
-                <div class="tiktok-card"><a href="https://www.tiktok.com/@tu_cuenta/video/0987654321" target="_blank" class="tiktok-link"></a><div class="play-btn">▶</div></div>
-                <div class="tiktok-card"><a href="https://www.tiktok.com/@tu_cuenta/video/0987654321" target="_blank" class="tiktok-link"></a><div class="play-btn">▶</div></div>
-                <div class="tiktok-card"><a href="https://www.tiktok.com/@tu_cuenta/video/0987654321" target="_blank" class="tiktok-link"></a><div class="play-btn">▶</div></div>
+
+            <div class="tiktok-loop auto-loop fade-in" data-speed="0.30">
+                <div class="tiktok-track">
+                    <article class="tiktok-card" tabindex="0" role="link" data-link="https://vt.tiktok.com/ZSuMk5tGT/">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=900&auto=format&fit=crop" alt="TikTok 1" />
+                        <div class="tiktok-overlay">
+                            <span class="social-badge">TikTok</span>
+                            <h3>Rutina funcional</h3>
+                            <p>Video 01</p>
+                        </div>
+                    </article>
+
+                    <article class="tiktok-card" tabindex="0" role="link" data-link="https://www.tiktok.com/@hubergymcusco/video/1111111111111111111">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=900&auto=format&fit=crop" alt="TikTok 2" />
+                        <div class="tiktok-overlay">
+                            <span class="social-badge">TikTok</span>
+                            <h3>Entrenamiento guiado</h3>
+                            <p>Video 02</p>
+                        </div>
+                    </article>
+
+                    <article class="tiktok-card" tabindex="0" role="link" data-link="https://www.tiktok.com/@hubergymcusco/video/2222222222222222222">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=900&auto=format&fit=crop" alt="TikTok 3" />
+                        <div class="tiktok-overlay">
+                            <span class="social-badge">TikTok</span>
+                            <h3>Trabajo de fuerza</h3>
+                            <p>Video 03</p>
+                        </div>
+                    </article>
+
+                    <article class="tiktok-card" tabindex="0" role="link" data-link="https://www.tiktok.com/@hubergymcusco/video/3333333333333333333">
+                        <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?q=80&w=900&auto=format&fit=crop" alt="TikTok 4" />
+                        <div class="tiktok-overlay">
+                            <span class="social-badge">TikTok</span>
+                            <h3>Progreso real</h3>
+                            <p>Video 04</p>
+                        </div>
+                    </article>
+
+                    <article class="tiktok-card" tabindex="0" role="link" data-link="https://www.tiktok.com/@hubergymcusco/video/4444444444444444444">
+                        <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?q=80&w=900&auto=format&fit=crop" alt="TikTok 5" />
+                        <div class="tiktok-overlay">
+                            <span class="social-badge">TikTok</span>
+                            <h3>Tips rápidos</h3>
+                            <p>Video 05</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
-    
+
+        <!-- TIPS / YOUTUBE -->
+        <section id="tips" class="video-section">
+            <div class="section-head fade-in">
+                <p class="section-tag">Tips</p>
+                <h2>Aprende con nuestra <span>playlist</span></h2>
+                <p>
+                    Solo cambia el enlace de la playlist en el HTML y el reproductor se actualizará automáticamente.
+                </p>
+            </div>
+
+            <div
+                class="youtube-playlist fade-in"
+                data-playlist-url="https://www.youtube.com/playlist?list=PL590L5WQmH8fJ54F1k4sv5jFh9iS6dP7N"
+            >
+                <div class="youtube-player"></div>
+                <div class="youtube-info">
+                    <h3>Tips de entrenamiento</h3>
+                    <p>
+                        Rutinas, consejos, técnica y contenido útil para mejorar tu rendimiento.
+                    </p>
+                    <a class="btn btn-outline youtube-open-link" target="_blank" rel="noopener noreferrer">
+                        Ver playlist completa
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS / YOUTUBE -->
+        <section id="testimonios" class="video-section video-section-alt">
+            <div class="section-head fade-in">
+                <p class="section-tag">Testimonios</p>
+                <h2>Historias reales de <span>transformación</span></h2>
+                <p>
+                    Esta sección también queda conectada desde una playlist de YouTube editable desde el HTML.
+                </p>
+            </div>
+
+            <div
+                class="youtube-playlist fade-in"
+                data-playlist-url="https://www.youtube.com/playlist?list=PL4cUxeGkcC9g5x_3tM8EFiqP6M7S2N9QW"
+            >
+                <div class="youtube-player"></div>
+                <div class="youtube-info">
+                    <h3>Testimonios Huber Gym</h3>
+                    <p>
+                        Experiencias, resultados y evolución de alumnos que forman parte de la comunidad.
+                    </p>
+                    <a class="btn btn-outline youtube-open-link" target="_blank" rel="noopener noreferrer">
+                        Ver testimonios
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        /*-----*/
+    <footer id="contacto" class="footer">
+        <div class="footer-content">
+            <h3>Huber Gym</h3>
+            <p>Entrenamiento, salud preventiva y evolución constante.</p>
+            <a href="https://www.tiktok.com/@hubergymcusco?_r=1&_t=ZS-94YP43hGULZ" target="_blank" rel="noopener noreferrer">
+                @hubergymcusco
+            </a>
+        </div>
     </footer>
+
+    <!-- MODAL / PESTAÑA DE PROGRAMAS -->
+    <div id="programsModal" class="programs-modal" aria-hidden="true">
+        <div class="modal-panel">
+            <div class="modal-head">
+                <div>
+                    <p class="section-tag">Catálogo completo</p>
+                    <h3>Todos los programas</h3>
+                </div>
+                <button id="closeProgramsModal" class="modal-close" aria-label="Cerrar">×</button>
+            </div>
+
+            <div id="modalProgramsGrid" class="modal-programs-grid"></div>
+        </div>
+    </div>
 
 </body>
 </html>
